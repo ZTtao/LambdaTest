@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" class="no-js">
+<head>
+   <meta charset="utf-8">
+   <title>Login</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/supersized.css">
+   <link rel="stylesheet" href="assets/css/style.css">	
+   <link rel="stylesheet" href="assets/css/animate.min.css"/>
+   
+	</head>
+<body>
+    <div id="errorTip" style="display:none;float:left;width:20%;height:50px;margin-left:40%;margin-right:40%;"></div>
+       <div class="page-container">
+         <h1>Login</h1>
+        <form id="loginForm">
+            <input id="username" type="text" name="userName" class="username" placeholder="user name">
+            <input id="password" type="password" name="password" class="username" placeholder="password">
+            <button type="button" onClick="login()">Sign me in</button>
+            <button id="toHome" type="button" onclick="window.location.href='index.html'">Home</button>
+            <div id="resultDiv" class="error"><span id="result" style="font-size:30px;"></span></div>
+            <div id="pwdResultDiv" class="errorPWD"><span id="pwdResult" style="font-size:30px;"></span></div>
+        </form>
+        <div id="process" style="display:none;opacity: 0.4;filter:alpha(opacity=40);width:300px;height:182px;position:absolute;background-color:red;left:39%;top:29%;background:url(assets/img/logining.gif) no-repeat center"></div>
+    </div>
+</body>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/supersized.3.2.7.min.js"></script>
+    <script src="assets/js/supersized-init.js"></script>
+	<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="assets/js/scripts.js"></script>
+    </html>
